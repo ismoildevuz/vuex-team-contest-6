@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background: #000000;
+  color: #ffffff;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+/* Background color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+/* Color of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #434343;
+  border-radius: 5px;
+}
+
+/* On hover, color of the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4b4b4b;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.gap-50 {
+  gap: 50px;
+}
+
+.gap-60 {
+  gap: 60px;
+}
+
+.my-30 {
+  margin: 30px 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.px-5 {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.py-10 {
+  padding: 10px 0;
+}
+
+.py-20 {
+  padding: 20px 0;
+}
+
+.py-30 {
+  padding: 30px 0;
+}
+
+.py-40 {
+  padding: 40px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.no-underline {
+  text-decoration-line: none;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.bg-none {
+  background: none;
+}
+
+.border-none {
+  border: none;
+}
+
+.border {
+  border: #ffffff 2px solid;
+}
+
+.border-white {
+  border: #ffffff;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.focus-outline-none {
+  outline: none;
+}
+
+.bg-gray {
+  background-color: #434343;
+}
+
+.h-700 {
+  height: 700px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding-inline-start: 0;
+}
+ul li {
+  list-style-type: none;
+}
+
+header nav button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+  cursor: pointer;
+}
+header nav button:hover {
+  background: var(--gray-borders, rgba(47, 43, 67, 0.02));
+}
+
+.intro {
+  margin-bottom: 150px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 360px;
+  }
+  .hidden {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
