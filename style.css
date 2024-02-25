@@ -57,6 +57,10 @@ body {
   justify-content: center;
 }
 
+.gap-5 {
+  gap: 5px;
+}
+
 .gap-15 {
   gap: 15px;
 }
@@ -73,33 +77,80 @@ body {
   gap: 60px;
 }
 
+.mt-60 {
+  margin-top: 60x;
+}
+
+.mt-80 {
+  margin-top: 80x;
+}
+
+.mt-100 {
+  margin-top: 100x;
+}
+
 .my-30 {
-  margin: 30px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.my-60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.my-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.my-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .p-0 {
-  padding: 0;
+  padding: 0px 0px;
 }
 
 .px-5 {
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.py-4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.py-5 {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .py-10 {
-  padding: 10px 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .py-20 {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .py-30 {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .py-40 {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .hidden {
@@ -127,7 +178,7 @@ body {
 }
 
 .border-white {
-  border: #ffffff;
+  border-color: #ffffff;
 }
 
 .rounded-full {
@@ -146,8 +197,40 @@ body {
   background-color: #434343;
 }
 
-.h-700 {
-  height: 700px;
+.bg-blue {
+  background-color: #0040DD;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.h-10 {
+  height: 10px;
+}
+
+.h-500 {
+  height: 500px;
+}
+
+.h-600 {
+  height: 600px;
+}
+
+.max-h-500 {
+  max-height: 500px;
 }
 
 .w-full {
@@ -162,18 +245,124 @@ ul li {
   list-style-type: none;
 }
 
+button {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+button:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 header nav button {
   padding: 10px 20px;
   border-radius: 10px;
   border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
-  cursor: pointer;
 }
 header nav button:hover {
   background: var(--gray-borders, rgba(47, 43, 67, 0.02));
 }
 
-.intro {
+.intro,
+.outro {
   margin-bottom: 150px;
+}
+.intro-text-container,
+.outro-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.intro-text-container p,
+.outro-text-container p {
+  font-size: 20px;
+  width: 80%;
+  margin-bottom: 50px;
+}
+.intro-text-container .button-to-top,
+.outro-text-container .button-to-top {
+  height: 70px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.services h2 {
+  margin-bottom: 50px;
+}
+.services .cards {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 100px;
+}
+.services .cards .card {
+  position: relative;
+  border: #ffffff 1px solid;
+  padding: 30px;
+  width: 350px;
+}
+.services .cards .card h3 {
+  margin-bottom: 80px;
+}
+.services .cards .card p {
+  margin-bottom: 80px;
+}
+.services .cards .card button {
+  position: absolute;
+  bottom: 30px;
+  border-radius: 9999px;
+  border: 2px solid #ffffff;
+  overflow: hidden;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+}
+.services .scroll-bar {
+  margin-bottom: 150px;
+  height: 3px;
+  background-color: #4b4b4b;
+}
+.services .scroll-bar .thumb {
+  height: 100%;
+  width: 30%;
+  background-color: #ffffff;
+}
+
+.portfolio h2 {
+  margin-bottom: 50px;
+}
+.portfolio .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+  margin-bottom: 100px;
+}
+.portfolio .cards .card {
+  border: #ffffff 1px solid;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+.portfolio .cards img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 @media (max-width: 640px) {
