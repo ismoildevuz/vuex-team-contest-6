@@ -1,0 +1,43 @@
+
+
+.form-info{
+    padding-top: 10px;
+    border-top: 1px solid white;
+    display: flex;
+    gap: 30px;
+}
+
+.form-info form {
+    flex: 1 1 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+form input, textarea{
+    background: #353436;
+    border: 1px solid white;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+textarea{
+    grid-column: span 2;
+    height: 200px;
+}
+
+.info-container{
+    border-left: 1px solid white;
+    padding-left: 10px;
+    flex-shrink: 11;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-title{
+    padding-top: 30px;
+    font-size: 30px;
+}
