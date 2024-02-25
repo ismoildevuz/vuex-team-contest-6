@@ -1,0 +1,53 @@
+.sn-body .body-img{
+    position: relative;
+    margin-top: 50px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.body-img .btn-group{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 30px;
+}
+
+.inner-content{
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.carousel{
+    margin-top: 70px;
+    width: 100vw;
+    overflow-y: scroll;
+}
+
+.carousel-content{
+    width: fit-content;
+    gap: 10px;
+    display: flex;
+}
+
+.carousel-content .item{
+    height: 300px;
+    width: 90vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+
+@media (max-width: 900px) {
+    .body-img .btn-group{
+        gap: 10px;
+    }
+}
