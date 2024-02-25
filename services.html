@@ -20,35 +20,27 @@
 
   <body class="relative">
     <header>
-      <div class="container">
-        <nav class="flex justify-between items-center py-40">
-          <a href="/"><img src="/icons/logo.svg" alt="Soffit" /></a>
-
-          <ul class="flex items-center gap-60">
-            <ul class="flex items-center gap-30">
-              <li>
-                <a href="/services.html" class="no-underline">Services</a>
-              </li>
-
-              <li>
-                <a href="/portfolio.html" class="no-underline">Portfolio</a>
-              </li>
-
-              <li>
-                <a href="/about" class="no-underline">About us</a>
-              </li>
-            </ul>
-
+      <nav class="container">
+        <a href="/"><img src="/icons/logo.svg" alt="Soffit" /></a>
+        <ul class="nav-options-container">
+          <ul class="navlinks">
             <li>
-              <div class="flex border rounded-full overflow-hidden px-5">
-                <button class="px-5">Uz</button>
-                <button class="px-5">Ru</button>
-                <button class="px-5">En</button>
-              </div>
+              <a href="/services.html">Services</a>
+            </li>
+            <li>
+              <a href="/portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="/about">About us</a>
             </li>
           </ul>
-        </nav>
-      </div>
+          <div class="lang rounded-full">
+            <button>Uz</button>
+            <button>Ru</button>
+            <button class="active">En</button>
+          </div>
+        </ul>
+      </nav>
     </header>
 
     <section id="services" class="services">

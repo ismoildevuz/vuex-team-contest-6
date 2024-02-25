@@ -198,6 +198,10 @@ body {
   overflow-x: scroll;
 }
 
+.overflow-x-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 .focus-outline-none {
   outline: none;
 }
@@ -332,7 +336,7 @@ header nav button:hover {
   position: relative;
   border: #ffffff 1px solid;
   padding: 30px;
-  width: 450px;
+  min-width: 400px;
 }
 .services .cards .card h3 {
   margin-bottom: 80px;
@@ -367,9 +371,9 @@ header nav button:hover {
   margin-bottom: 50px;
 }
 .portfolio .cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 8px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
   margin-bottom: 100px;
 }
 .portfolio .cards .card {
@@ -385,6 +389,60 @@ header nav button:hover {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.sn-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+.portfolio-body-grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.portfolio-body-grid .item {
+  flex: 1 1 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 23px;
+  border: 1px solid white;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s ease;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolio-body-grid .item:hover .hover-item {
+  bottom: 30px;
+}
+
+.portfolio-body-grid .item:hover {
+  filter: brightness(1.3);
+}
+
+.portfolio-body-grid .hover-item {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: absolute;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 50px;
+  bottom: -100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  transition: all 0.5s ease;
 }
 
 .light1 {
