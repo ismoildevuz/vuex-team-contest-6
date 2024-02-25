@@ -203,6 +203,15 @@ footer .table .tcol{
 }
 
 @media (max-width: 900px) {
+  .container{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .spaced-container{
+    padding: 50%;
+  }
+  
   .nav-options-container{
     display: none;
   }
